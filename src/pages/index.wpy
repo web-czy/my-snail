@@ -24,6 +24,11 @@
         <view class="text">新人专享</view>
         <view class="desc">购书含课，免费试学</view>
       </view>
+      <view class="book-list">
+        <view class="li">
+          <image class="img" src=""></image>
+        </view>
+      </view>
     </view>
   </view>
 </template>
@@ -61,18 +66,18 @@ export default class Index extends wepy.page {
 
   events = {};
 
-  onLoad() {
-  }
+  onLoad() {}
 }
 </script>
 <style lang="less" scoped>
 .index-container {
-  color: #101D37;
-  background:rgba(246,249,253,1);
+  color: #101d37;
+  background: rgba(246, 249, 253, 1);
   .header {
     padding: 30rpx 40rpx 0 40rpx;
     width: 750rpx;
     box-sizing: border-box;
+    background: #ffffff;
     .banner {
       width: 100%;
       height: 240rpx;
@@ -111,19 +116,20 @@ export default class Index extends wepy.page {
       width: 100%;
       height: 56rpx;
       .text {
-        font-size:40rpx;
-        font-weight:600;
-        color:rgba(16,29,55,1)
+        font-size: 40rpx;
+        font-weight: 600;
+        color: rgba(16, 29, 55, 1);
       }
       .desc {
         margin-left: 20rpx;
         padding: 0 15rpx;
-        height:40rpx;
-        line-height:40rpx;
-        font-size:26rpx;
-        color:rgba(255,255,255,1);
-        background:rgba(246,98,108,1);
-        border-radius:19rpx 19rpx 19rpx 0;
+        height: 40rpx;
+        line-height: 40rpx;
+        font-size: 26rpx;
+        color: rgba(255, 255, 255, 1);
+        background: rgba(246, 98, 108, 1);
+        border-radius: 19rpx 19rpx 19rpx 0;
+        box-shadow: 2rpx 8rpx 20rpx rgba(246, 98, 108, 0.5);
       }
     }
   }
